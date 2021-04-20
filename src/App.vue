@@ -66,13 +66,16 @@ export default defineComponent({
 </script>
 
 <style>
+body {
+  @apply font-sans;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  @apply font-sans;
 }
 .button {
   @apply border rounded font-bold m-auto p-2 bg-white text-green-500 hover:text-white hover:bg-green-500
