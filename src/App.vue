@@ -1,7 +1,9 @@
 <template>
  <h1 class="font-bold text-5xl">DEV posts</h1>
  <p v-if="error" class="text-red-500">{{error}}</p>
- <p v-if="!articlesData" class="text-indigo-400">Loading...</p>
+ <div v-if="!articlesData && !error" class="text-indigo-400 container py-4 gap-4 mx-auto grid grid-cols-1 lg:grid-cols-3">
+   <article-card v-for="i in 10" :key="i" :isSkeleton="true" />
+ </div>
  <main v-else class="container py-4 gap-4 mx-auto grid grid-cols-1 lg:grid-cols-3">
    <article-card v-for="article in articlesData"
      :key="article.id"
