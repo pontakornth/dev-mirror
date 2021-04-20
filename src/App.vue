@@ -10,6 +10,7 @@
      :link="article.url"
      :imgSrc="article.social_image"
      :title="article.title"
+     :tags="article.tag_list"
      />
  </main>
  <div class="flex p-4 justify-evenly">
